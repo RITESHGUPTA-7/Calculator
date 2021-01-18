@@ -1,0 +1,59 @@
+                        <!-- Project using simple HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oye!! Rickshaw Calculator</title>
+    <link rel="stylesheet" type="text/css" href="oyerickshaw.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+
+    <div class="calframe">
+
+        <form class="calculator" name="calculate">
+
+            <div class="screen">
+
+                <input class="input-scr" type="text" name="scr1">
+                <input class="result-scr" type="text" name="scr2" value='0'>
+
+            </div>
+
+            <div class="btn-body">
+
+                <span class="numbers light-btn" onclick="document.calculate.scr1.value=' ' , document.calculate.scr2.value=' ' " > C </span>
+                <span class="numbers light-btn" onclick="document.calculate.scr1.value+=''"> +/- </span>
+                <span class="numbers light-btn" onclick="document.calculate.scr1.value+='%'"> % </span>
+                <span class="numbers operator" onclick="document.calculate.scr1.value+='/'" > ÷ </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='7'" > 7 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='8'" > 8 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='9'" > 9 </span>
+                <span class="numbers operator" onclick="document.calculate.scr1.value+='*'" > x </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='4'" > 4 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='5'" > 5 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='6'" > 6 </span>
+                <span class="numbers operator" onclick="document.calculate.scr1.value+='-'" > - </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='1'" > 1 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='2'" > 2 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='3'" > 3 </span>
+                <span class="numbers operator" onclick="document.calculate.scr1.value+='+'" > + </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+='0'" > 0 </span>
+                <span class="numbers" onclick="document.calculate.scr1.value+=''" > </span>
+                <span class="numbers operator" onclick="document.calculate.scr1.value+='.'" > . </span>
+                <span class="numbers equals" onclick="document.calculate.scr2.value=eval(document.calculate.scr1.value)">=</span>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
